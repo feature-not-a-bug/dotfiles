@@ -1,0 +1,10 @@
+set backupdir=./.bkp,$HOME/tmp/vim
+set directory=./.bkp,$HOME/tmp/vim
+set undodir=./.bkp,$HOME/tmp/vim
+
+set enc=utf-8
+
+syntax on
+
+colorscheme codedark
+

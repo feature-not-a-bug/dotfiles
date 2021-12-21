@@ -1,0 +1,49 @@
+    get256v () {
+        INVAL="$(($1 % 255 + 1))"
+
+        if ((INVAL >= 16 && INVAL <= 18)); then
+                INVAL="$((INVAL + 3))"
+        fi
+
+        if ((INVAL >= 232 && INVAL <= 238)); then
+                INVAL="$((INVAL + 7))"
+        fi
+
+        echo "$INVAL"
+    }
+
+    UIDA="$(perl -e 'map {$x += ord } split(//, $ENV{USER}); print $x + 20')"
+    UID8="$(($UIDA % 7 + 1))"
+    UID256="$(get256v $UIDA)"
+
+    USER8="\[$(tput setaf $UID8)\]"
+    USER256="\[$(tput setaf $UID256)\]"
+
+    HID="$(perl -lne 'map {$x += ord } split //; print $x % 256' /etc/hostname)"
+    HID8="$((HID & 7 + 1))"
+    HID256="$(get256v $HID)"
+
+    HOST8="\[$(tput setaf $HID8)\]"
+    HOST256="\[$(tput setaf $HID256)\]"
+
+    RED="\[$(tput setaf 1)\]"
+    BRED="\[$(tput setaf 160)\]"
+    GREEN="\[$(tput setaf 2)\]"
+    BLUE="\[$(tput setaf 4)\]"
+    YELLOW="\[$(tput setaf 3)\]"
+    PURPLE="\[$(tput setaf 129)\]"
+    MAGENTA="\[$(tput setaf 5)\]"
+    GREY="\[$(tput setaf 242)\]"
+    ORANGE="\[$(tput setaf 166)\]"
+    BOLD="\[$(tput bold)\]"
+    RESET="\[$(tput sgr0)\]"
+
+    function nonzero_return() {
+            RETVAL=$?
+            [ $RETVAL -ne 0 ] && echo " ($RETVAL) "
+    }
+
+    NZR='$(nonzero_return)'
+
+    PS1="${debian_chroot:+($debian_chroot)}${USER8}${USER256}\u${RESET}@${HOST8}${HOST256}\h${RESET}[${BLUE}${GREY}\D{%F %T}${RESET}]:${RED}${BRED}${NZR}${BOLD}${YELLOW}${ORANGE}\w${RESET}\n\$${RESET} "
+

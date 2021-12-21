@@ -1,0 +1,16 @@
+function add_to_path {
+  case ":$PATH:" in
+    *":$1:"*) :;; # already there
+    *) export PATH="$1:$PATH";; # or PATH="$PATH:$1"
+  esac
+}
+
+function add_to_path_if_exists {
+  if [ -d "$1" ]
+  then
+    case ":$PATH:" in
+      *":$1:"*) :;; # already there
+      *) export PATH="$1:$PATH";; # or PATH="$PATH:$1"
+    esac
+  fi
+}

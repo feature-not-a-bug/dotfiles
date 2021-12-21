@@ -1,0 +1,19 @@
+function wcd {
+    x="$@"
+
+    # Greedy capture of colon to end of string to get drive letter
+    drive="${x%%:*}"
+
+    if [ "${x}" == "${drive}" ]; then
+        echo "Path does not contain a drive letter"
+        return 1
+    fi 
+
+    # Remove drive letter and colon from path and convert all backslashes to forward slashes
+    path="${x#*:}"
+    path="${path//\\//}"
+
+    # Change directory to /mnt/lc(drive). Strips control characters to be able to work with hanging quotes what include linebreaks
+    cd "/mnt/${drive,,}${path//[[:cntrl:]]/}" 
+}
+
