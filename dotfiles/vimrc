@@ -1,10 +1,19 @@
+set enc=utf-8
+scriptencoding utf-8
+
 set backupdir=./.bkp,$HOME/tmp/vim
 set directory=./.bkp,$HOME/tmp/vim
 set undodir=./.bkp,$HOME/tmp/vim
 
-set enc=utf-8
+set nocompatible
 
-syntax on
+syntax enable
+
+set path+=**
+set wildmenu
+
+set list
+set showbreak=↪\ 
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:»,precedes:«
 
 colorscheme codedark
-
