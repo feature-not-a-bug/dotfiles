@@ -40,10 +40,20 @@
 
     function nonzero_return() {
             RETVAL=$?
-            [ $RETVAL -ne 0 ] && echo " ($RETVAL) "
+            [ $RETVAL -ne 0 ] && echo " ($RETVAL)"
     }
 
     NZR='$(nonzero_return)'
 
-    PS1="${debian_chroot:+($debian_chroot)}${USER8}${USER256}\u${RESET}@${HOST8}${HOST256}\h${RESET}[${BLUE}${GREY}\D{%F %T}${RESET}]:${RED}${BRED}${NZR}${BOLD}${YELLOW}${ORANGE}\w${RESET}\n\$${RESET} "
+    export GIT_PS1_SHOWCOLORHINTS=1
+    export GIT_PS1_SHOWDIRTYSTATE=1
 
+    NZR='$(nonzero_return)'
+
+    PRE_GIT="${debian_chroot:+($debian_chroot)}${USER8}${USER256}\u${RESET}" # User
+    PRE_GIT+="@"                                                                              # @
+    PRE_GIT+="${HOST8}${HOST256}\h${RESET}"                                          # Host
+    PRE_GIT+="[${BLUE}${GREY}\D{%F %T}${RESET}]:"                                   # Time
+    PRE_GIT+="${RED}${BRED}${NZR}"                                                       # Error value
+    POST_GIT=" ${BOLD}${YELLOW}${ORANGE}\w${RESET}\n\$${RESET} "               # Working director & prompt
+    PROMPT_COMMAND='__git_ps1 "$PRE_GIT" "$POST_GIT"'

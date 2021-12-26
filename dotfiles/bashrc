@@ -27,6 +27,7 @@ shopt -s checkwinsize
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
 
+. "$HOME/.bashrc.git"
 . "$HOME/.bashrc.func"
 . "$HOME/.bashrc.wslfunc"
 
