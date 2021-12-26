@@ -10,7 +10,7 @@ set undodir=./.bkp,$HOME/tmp/vim
 set nocompatible
 
 set path+=**
-set wildmenu wildmode=list:full
+set wildmenu wildmode=full
 set wildcharm=<C-z>
 
 set list
