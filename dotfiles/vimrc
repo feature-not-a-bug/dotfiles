@@ -37,3 +37,5 @@ nnoremap <leader><leader> <C-^>
 nnoremap <leader>; :buffer <C-z>
 " <leader>g stats
 nnoremap <leader>q g<c-g>
+" <leader>t stats
+nnoremap <leader>t :help digraph-table<CR>
