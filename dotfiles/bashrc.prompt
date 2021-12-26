@@ -48,8 +48,6 @@
     GIT_PS1_SHOWCOLORHINTS=1
     GIT_PS1_SHOWDIRTYSTATE=1
 
-    NZR='$(nonzero_return)'
-
     PRE_GIT="${debian_chroot:+($debian_chroot)}${USER8}${USER256}\u${RESET}" # User
     PRE_GIT+="@"                                                                              # @
     PRE_GIT+="${HOST8}${HOST256}\h${RESET}"                                          # Host
