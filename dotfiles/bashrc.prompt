@@ -49,8 +49,7 @@
     GIT_PS1_SHOWDIRTYSTATE=1
 
     PRE_GIT="${debian_chroot:+($debian_chroot)}${USER8}${USER256}\u${RESET}" # User
-    PRE_GIT+="@"                                                                              # @
-    PRE_GIT+="${HOST8}${HOST256}\h${RESET}"                                          # Host
+    PRE_GIT+="@${HOST8}${HOST256}\h${RESET}"                                         # @ Host
     PRE_GIT+="[${BLUE}${GREY}\D{%F %T}${RESET}]:"                                   # Time
     PRE_GIT+="${RED}${BRED}${NZR}${RESET}"                                            # Error value
     POST_GIT=" ${BOLD}${YELLOW}${ORANGE}\w${RESET}\n\$${RESET} "               # Working director & prompt
