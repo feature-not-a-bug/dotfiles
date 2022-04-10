@@ -122,6 +122,7 @@ add_to_path_if_exists /usr/local/go/bin
 add_to_path_if_exists ${USERPROFILE}/AppData/Local/Programs/Microsoft\ VS\ Code/bin
 add_to_path_if_exists /mnt/c/Program\ Files/PowerShell/7
 add_to_path_if_exists ${MSBUILDTOOLS}
+add_to_path_if_exists /opt/jdk-17.0.2+8/bin/
 
 if [ -f "$HOME/.config/postgres/pgenv.conf" ]
 then
@@ -136,4 +137,9 @@ fi
 if [ -f "$HOME/.cargo/env" ]
 then
     . "$HOME/.cargo/env"
+fi
+
+if [ -f "$HOME/.bashrc.node" ]
+then
+    . "$HOME/.bashrc.node"
 fi
