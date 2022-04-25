@@ -9,7 +9,7 @@ set undodir=./.bkp,$HOME/tmp/vim
 
 set nocompatible
 
-if getcwd() == "C:\\Windows\\system32"
+if getcwd() ==? "C:\\Windows\\system32"
 	cd $USERPROFILE
 endif
 
@@ -50,3 +50,11 @@ nnoremap <leader>t :help digraph-table<CR>
 
 set tabstop=4
 set shiftwidth=4
+
+" Custom digraphs
+digr ZZ 8484 " Blackboard Z
+digr NN 8469 " Blackboard N
+digr RR 8477 " Blackboard R
+digr -r 8866 " Right tack
+digr -l 8867 " Left tack
+digr T- 8868 " Down tack
