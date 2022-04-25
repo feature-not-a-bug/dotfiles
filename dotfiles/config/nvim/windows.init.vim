@@ -9,7 +9,7 @@ set undodir=./.bkp,$HOME/tmp/vim
 
 set nocompatible
 
-if getcwd() == "C:\\Windows\\system32"
+if getcwd() ==? "C:\\Windows\\system32"
 	cd $USERPROFILE
 endif
 
