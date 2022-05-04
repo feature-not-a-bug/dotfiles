@@ -27,6 +27,7 @@ colorscheme codedark
 set guifont=Iosevka_Term:h14
 let g:neovide_refresh_rate=144
 let g:neovide_cursor_vfx_mode = "wireframe"
+let g:rainbow_active=1
 
 set number
 
@@ -43,9 +44,9 @@ augroup END
 nnoremap <leader><leader> <C-^>
 " <leader>; shows a menu for buffers
 nnoremap <leader>; :buffer <C-z>
-" <leader>g stats
+" <leader>q stats
 nnoremap <leader>q g<c-g>
-" <leader>t stats
+" <leader>t show searchable digraph table 
 nnoremap <leader>t :help digraph-table<CR>
 
 set tabstop=4
