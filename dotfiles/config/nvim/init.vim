@@ -52,6 +52,12 @@ nnoremap <leader>t :help digraph-table<CR>
 set tabstop=4
 set shiftwidth=4
 
+if has('nvim')
+	packadd nvim-lspconfig
+	lua require('lspconfig').rust_analyzer.setup{…}
+	set omnifunc=v:lua.vim.lsp.omnifunc
+endif
+
 " Custom digraphs
 digr ZZ 8484 " Blackboard Z
 digr NN 8469 " Blackboard N
