@@ -2,3 +2,9 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "dotfiles/config/nvim/pack/syntax/opt/nvim-lspconfig"]
+	path = dotfiles/config/nvim/pack/syntax/opt/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "dotfiles/config/nvim/pack/syntax/start/vim-rainbow"]
+	path = dotfiles/config/nvim/pack/syntax/start/vim-rainbow
+	url = https://github.com/frazrepo/vim-rainbow.git
