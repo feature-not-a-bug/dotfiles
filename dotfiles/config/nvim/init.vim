@@ -69,7 +69,7 @@ if has('nvim')
 	packadd telescope.nvim
 
 	packadd cmp-helper
-	set signcolumn
+	set signcolumn=yes
 endif
 
 " Custom digraphs
