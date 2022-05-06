@@ -8,3 +8,33 @@
 [submodule "dotfiles/config/nvim/pack/syntax/start/vim-rainbow"]
 	path = dotfiles/config/nvim/pack/syntax/start/vim-rainbow
 	url = https://github.com/frazrepo/vim-rainbow.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/nvim-cmp"]
+	path = dotfiles/config/nvim/pack/syntax/opt/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/cmp-nvim-lsp"]
+	path = dotfiles/config/nvim/pack/syntax/opt/cmp-nvim-lsp
+	url = https://www.github.com/hrsh7th/cmp-nvim-lsp.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/cmp-vsnip"]
+	path = dotfiles/config/nvim/pack/syntax/opt/cmp-vsnip
+	url = https://www.github.com/hrsh7th/cmp-vsnip.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/cmp-path"]
+	path = dotfiles/config/nvim/pack/syntax/opt/cmp-path
+	url = https://www.github.com/hrsh7th/cmp-path.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/cmp-buffer"]
+	path = dotfiles/config/nvim/pack/syntax/opt/cmp-buffer
+	url = https://www.github.com/hrsh7th/cmp-buffer.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/rust-tools.nvim"]
+	path = dotfiles/config/nvim/pack/syntax/opt/rust-tools.nvim
+	url = https://www.github.com/simrat39/rust-tools.nvim.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/vim-vsnip"]
+	path = dotfiles/config/nvim/pack/syntax/opt/vim-vsnip
+	url = https://www.github.com/hrsh7th/vim-vsnip.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/popup.nvim"]
+	path = dotfiles/config/nvim/pack/syntax/opt/popup.nvim
+	url = https://www.github.com/nvim-lua/popup.nvim.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/plenary.nvim"]
+	path = dotfiles/config/nvim/pack/syntax/opt/plenary.nvim
+	url = https://www.github.com/nvim-lua/plenary.nvim.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/telescope.nvim"]
+	path = dotfiles/config/nvim/pack/syntax/opt/telescope.nvim
+	url = https://www.github.com/nvim-telescope/telescope.nvim.git

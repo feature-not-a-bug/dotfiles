@@ -56,6 +56,20 @@ if has('nvim')
 	packadd nvim-lspconfig
 	lua require('lspconfig').rust_analyzer.setup{…}
 	set omnifunc=v:lua.vim.lsp.omnifunc
+
+	packadd nvim-cmp
+	packadd cmp-nvim-lsp
+	packadd cmp-vsnip
+	packadd cmp-path
+	packadd cmp-buffer
+	packadd rust-tools.nvim
+	packadd vim-vsnip
+	packadd popup.nvim
+	packadd plenary.nvim
+	packadd telescope.nvim
+
+	packadd cmp-helper
+	set signcolumn
 endif
 
 " Custom digraphs
