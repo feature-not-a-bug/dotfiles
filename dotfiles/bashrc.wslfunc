@@ -13,7 +13,7 @@ function wcd {
     path="${x#*:}"
     path="${path//\\//}"
 
-    # Change directory to /mnt/lc(drive). Strips control characters to be able to work with hanging quotes what include linebreaks
+    # Change directory to /mnt/lc(drive). Strips control characters to be able to work with hanging quotes that include linebreaks
     cd "/mnt/${drive,,}${path//[[:cntrl:]]/}" 
 }
 
