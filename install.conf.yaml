@@ -13,10 +13,11 @@
     ~/.bashrc.wslfunc: dotfiles/bashrc.wslfunc
     ~/.dircolors: dotfiles/dircolors
     ~/.vimrc: dotfiles/vimrc
+    ~/.inputrc: dotfiles/inputrc
 
     # Directories
     ~/.config: dotfiles/config
-    ~/.vim: dotfiles/vim
+    ~/.vim: dotfiles/config/nvim
 
 - create:
     - ~/tmp/vim
