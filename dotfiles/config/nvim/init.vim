@@ -89,6 +89,10 @@ if has('nvim')
 
 	packadd cmp-helper
 	set signcolumn=yes
+
+	let g:neovide_confirm_quit=1
+	let g:neovide_window_floating_opacity=0.8
+	let g:neovide_remember_window_position=v:false
 endif
 
 " Custom digraphs
