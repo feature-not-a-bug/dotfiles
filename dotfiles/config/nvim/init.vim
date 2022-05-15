@@ -24,7 +24,13 @@ set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:»,precedes:«
 syntax enable
 colorscheme codedark
 
-set guifont=Iosevka_Term:h14
+let s:hostname = substitute(system('hostname'), '[[:cntrl:]]', '', 'g')
+
+if s:hostname ==? "SpaceCadet"
+	set guifont=Iosevka_Term:h12
+else
+	set guifont=Iosevka_Term:h14
+endif
 let g:neovide_refresh_rate=144
 let g:neovide_cursor_vfx_mode = "wireframe"
 let g:rainbow_active=1
