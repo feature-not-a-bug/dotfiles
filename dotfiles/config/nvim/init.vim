@@ -20,6 +20,7 @@ set wildcharm=<C-z>
 set list
 set showbreak=↪\ 
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:»,precedes:«
+set linebreak
 
 syntax enable
 colorscheme codedark
