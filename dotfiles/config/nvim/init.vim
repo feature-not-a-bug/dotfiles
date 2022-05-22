@@ -32,9 +32,6 @@ if s:hostname ==? "SpaceCadet"
 else
 	set guifont=Iosevka_Term:h14
 endif
-let g:neovide_refresh_rate=144
-let g:neovide_cursor_vfx_mode = "wireframe"
-let g:rainbow_active=1
 
 let g:rainbow_ctermfgs = [
             \ 'brown',
@@ -80,8 +77,6 @@ set shiftwidth=4
 
 if has('nvim')
 	packadd nvim-lspconfig
-	lua require('lspconfig').rust_analyzer.setup{…}
-	set omnifunc=v:lua.vim.lsp.omnifunc
 
 	packadd nvim-cmp
 	packadd cmp-nvim-lsp
@@ -95,8 +90,12 @@ if has('nvim')
 	packadd telescope.nvim
 
 	packadd cmp-helper
+	set omnifunc=v:lua.vim.lsp.omnifunc
 	set signcolumn=yes
 
+	let g:neovide_refresh_rate=144
+	let g:neovide_cursor_vfx_mode = "wireframe"
+	let g:rainbow_active=1
 	let g:neovide_confirm_quit=1
 	let g:neovide_window_floating_opacity=0.8
 	let g:neovide_remember_window_position=v:false
