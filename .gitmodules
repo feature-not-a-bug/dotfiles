@@ -41,3 +41,6 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/nvim-lsp-installer"]
 	path = dotfiles/config/nvim/pack/syntax/opt/nvim-lsp-installer
 	url = https://github.com/williamboman/nvim-lsp-installer
+[submodule "dotfiles/config/nvim/pack/syntax/opt/rust.vim"]
+	path = dotfiles/config/nvim/pack/syntax/opt/rust.vim
+	url = https://github.com/rust-lang/rust.vim
