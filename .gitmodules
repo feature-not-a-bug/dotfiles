@@ -38,3 +38,6 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/telescope.nvim"]
 	path = dotfiles/config/nvim/pack/syntax/opt/telescope.nvim
 	url = https://www.github.com/nvim-telescope/telescope.nvim.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/nvim-lsp-installer"]
+	path = dotfiles/config/nvim/pack/syntax/opt/nvim-lsp-installer
+	url = https://github.com/williamboman/nvim-lsp-installer

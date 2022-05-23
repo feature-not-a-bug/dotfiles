@@ -76,7 +76,9 @@ set tabstop=4
 set shiftwidth=4
 
 if has('nvim')
+	packadd nvim-lsp-installer
 	packadd nvim-lspconfig
+	lua require("nvim-lsp-installer").setup {}
 
 	packadd nvim-cmp
 	packadd cmp-nvim-lsp
