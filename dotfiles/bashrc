@@ -2,6 +2,17 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Stuff that should be exposed even for non-interactive shells
+
+# Rust toolchain
+if [ -f "$HOME/.cargo/env" ]
+then
+    . "$HOME/.cargo/env"
+fi
+
+# Haskell toolchain
+[ -f "/home/deepak/.ghcup/env" ] && . "/home/deepak/.ghcup/env" # ghcup-env
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -139,12 +150,8 @@ then
     . "$HOME/.bashrc.perl"
 fi
 
-if [ -f "$HOME/.cargo/env" ]
-then
-    . "$HOME/.cargo/env"
-fi
-
 if [ -f "$HOME/.bashrc.node" ]
 then
     . "$HOME/.bashrc.node"
 fi
+
