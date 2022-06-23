@@ -44,3 +44,9 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/rust.vim"]
 	path = dotfiles/config/nvim/pack/syntax/opt/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "dotfiles/config/nvim/pack/syntax/start/vim-hindent"]
+	path = dotfiles/config/nvim/pack/syntax/start/vim-hindent
+	url = https://github.com/alx741/vim-hindent
+[submodule "dotfiles/config/nvim/pack/syntax/start/haskell-vim"]
+	path = dotfiles/config/nvim/pack/syntax/start/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim
