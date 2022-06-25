@@ -6,14 +6,16 @@
 
 - link:
     # Files 
-    ~/.bashrc: dotfiles/bashrc
     ~/.bashrc.func: dotfiles/bashrc.func
     ~/.bashrc.git: dotfiles/bashrc.git
     ~/.bashrc.prompt: dotfiles/bashrc.prompt
     ~/.bashrc.wslfunc: dotfiles/bashrc.wslfunc
+    ~/.bashrc: dotfiles/bashrc
     ~/.dircolors: dotfiles/dircolors
-    ~/.vimrc: dotfiles/vimrc
+    ~/.ghci: dotfiles/ghci
+    ~/.haskeline: dotfiles/haskeline
     ~/.inputrc: dotfiles/inputrc
+    ~/.vimrc: dotfiles/vimrc
 
     # Directories
     ~/.config: dotfiles/config

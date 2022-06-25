@@ -1,0 +1,6 @@
+:set prompt "\001\ESC[38;5;9m\002\001\ESC[38;5;242m\002[%t] \001\ESC[38;5;12m\002\001\ESC[38;5;063m\002%s\n\001\ESC[38;5;5m\002\001\ESC[38;5;093m\002λ >\001\ESC[0m\002 "
+:set prompt-cont "\001\ESC[38;5;093m\002λ >\001\ESC[0m\002"
+
+:set +s
+
+:def clear \_ -> return $ ":!clear"
