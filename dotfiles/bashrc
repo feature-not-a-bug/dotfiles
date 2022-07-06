@@ -18,6 +18,7 @@ fi
 [ -f "/home/deepak/.ghcup/env" ] && . "/home/deepak/.ghcup/env" # ghcup-env
 
 add_to_path_if_exists /home/deepak/.local/bin
+add_to_path_if_exists /home/deepak/.ghcup/bin
 
 # If not running interactively, don't do anything
 case $- in

@@ -80,6 +80,7 @@ if has('nvim')
 	packadd nvim-lsp-installer
 	packadd nvim-lspconfig
 	lua require("nvim-lsp-installer").setup {}
+	lua require'lspconfig'.hls.setup{}
 
 	packadd nvim-cmp
 	packadd cmp-nvim-lsp
