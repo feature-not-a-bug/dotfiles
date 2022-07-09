@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/deepak/code/vim/vim-fourmolu/autoload'
+let g:netrw_dirhist_3='/home/deepak/.dotfiles/dotfiles/config/nvim/pack/syntax/start/vim-fourmolu/autoload'
+let g:netrw_dirhist_2='/home/deepak/.dotfiles/dotfiles/config/nvim/pack/syntax/start/vim-fourmolu'
 let g:netrw_dirhist_1='/home/deepak/.ghc'
