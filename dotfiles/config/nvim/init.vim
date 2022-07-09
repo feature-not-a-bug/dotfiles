@@ -80,7 +80,7 @@ if has('nvim')
 	packadd nvim-lsp-installer
 	packadd nvim-lspconfig
 	lua require("nvim-lsp-installer").setup {}
-	lua require'lspconfig'.hls.setup{}
+	lua require'lspconfig'.hls.setup{ settings = { haskell = { formattingProvider = "fourmolu" } } }
 
 	packadd nvim-cmp
 	packadd cmp-nvim-lsp
@@ -96,6 +96,8 @@ if has('nvim')
 	packadd cmp-helper
 	set omnifunc=v:lua.vim.lsp.omnifunc
 	set signcolumn=yes
+
+	let g:haskell_indent_disable=1
 
 	let g:neovide_refresh_rate=144
 	let g:neovide_cursor_vfx_mode = "wireframe"
