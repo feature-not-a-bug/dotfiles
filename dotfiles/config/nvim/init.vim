@@ -10,7 +10,7 @@ set undodir=./.bkp,$HOME/tmp/vim
 set nocompatible
 
 if getcwd() ==? "C:\\Windows\\system32"
-	cd $USERPROFILE
+    cd $USERPROFILE
 endif
 
 set path+=**
@@ -28,9 +28,9 @@ colorscheme codedark
 let s:hostname = substitute(system('hostname'), '[[:cntrl:]]', '', 'g')
 
 if s:hostname ==? "SpaceCadet"
-	set guifont=Iosevka_Term:h12
+    set guifont=Iosevka_Term:h12
 else
-	set guifont=Iosevka_Term:h14
+    set guifont=Iosevka_Term:h14
 endif
 
 let g:rainbow_ctermfgs = [
@@ -71,40 +71,41 @@ nnoremap <leader>; :buffer <C-z>
 nnoremap <leader>q g<c-g>
 " <leader>t show searchable digraph table 
 nnoremap <leader>t :help digraph-table<CR>
+nnoremap <leader><Tab> :set expandtab<bar>:retab<bar>:set noexpandtab<CR>
 
 set tabstop=4
 set shiftwidth=4
 
 if has('nvim')
-	packadd rust.vim
-	packadd nvim-lsp-installer
-	packadd nvim-lspconfig
-	lua require("nvim-lsp-installer").setup {}
-	lua require'lspconfig'.hls.setup{ settings = { haskell = { formattingProvider = "fourmolu" } } }
+    packadd rust.vim
+    packadd nvim-lsp-installer
+    packadd nvim-lspconfig
+    lua require("nvim-lsp-installer").setup {}
+    lua require'lspconfig'.hls.setup{ settings = { haskell = { formattingProvider = "fourmolu" } } }
 
-	packadd nvim-cmp
-	packadd cmp-nvim-lsp
-	packadd cmp-vsnip
-	packadd cmp-path
-	packadd cmp-buffer
-	packadd rust-tools.nvim
-	packadd vim-vsnip
-	packadd popup.nvim
-	packadd plenary.nvim
-	packadd telescope.nvim
+    packadd nvim-cmp
+    packadd cmp-nvim-lsp
+    packadd cmp-vsnip
+    packadd cmp-path
+    packadd cmp-buffer
+    packadd rust-tools.nvim
+    packadd vim-vsnip
+    packadd popup.nvim
+    packadd plenary.nvim
+    packadd telescope.nvim
 
-	packadd cmp-helper
-	set omnifunc=v:lua.vim.lsp.omnifunc
-	set signcolumn=yes
+    packadd cmp-helper
+    set omnifunc=v:lua.vim.lsp.omnifunc
+    set signcolumn=yes
 
-	let g:haskell_indent_disable=1
+    let g:haskell_indent_disable=1
 
-	let g:neovide_refresh_rate=144
-	let g:neovide_cursor_vfx_mode = "wireframe"
-	let g:rainbow_active=1
-	let g:neovide_confirm_quit=1
-	let g:neovide_window_floating_opacity=0.8
-	let g:neovide_remember_window_position=v:false
+    let g:neovide_refresh_rate=144
+    let g:neovide_cursor_vfx_mode = "wireframe"
+    let g:rainbow_active=1
+    let g:neovide_confirm_quit=1
+    let g:neovide_window_floating_opacity=0.8
+    let g:neovide_remember_window_position=v:false
 endif
 
 " Custom digraphs
