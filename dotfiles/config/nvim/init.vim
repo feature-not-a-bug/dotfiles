@@ -100,12 +100,16 @@ if has('nvim')
 
     let g:haskell_indent_disable=1
 
-    let g:neovide_refresh_rate=144
-    let g:neovide_cursor_vfx_mode = "wireframe"
-    let g:rainbow_active=1
-    let g:neovide_confirm_quit=1
-    let g:neovide_window_floating_opacity=0.8
-    let g:neovide_remember_window_position=v:false
+    if exists("g:neovide")
+        let g:neovide_refresh_rate=144
+        let g:neovide_cursor_vfx_mode = "wireframe"
+        let g:rainbow_active=1
+        let g:neovide_confirm_quit=1
+        let g:neovide_window_floating_opacity=0.8
+        let g:neovide_cursor_vfx_mode = "pixiedust"
+        let g:neovide_cursor_vfx_particle_density=14
+        let g:neovide_remember_window_position=v:false
+    endif
 endif
 
 " Custom digraphs
