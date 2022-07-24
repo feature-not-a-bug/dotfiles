@@ -7,6 +7,8 @@ set backupdir=./.bkp,$HOME/tmp/vim
 set directory=./.bkp,$HOME/tmp/vim
 set undodir=./.bkp,$HOME/tmp/vim
 
+set undofile
+
 set nocompatible
 
 if getcwd() ==? "C:\\Windows\\system32"
