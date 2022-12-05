@@ -121,3 +121,4 @@ digr RR 8477 " Blackboard R
 digr -r 8866 " Right tack
 digr -l 8867 " Left tack
 digr T- 8868 " Down tack
+digr -0 8888 " Multimap
