@@ -47,11 +47,11 @@
 
     function in_nix() {
             if [ "$name" == "nix-shell" ]; then
-                echo "[$name]"
+                echo "[$name] "
             fi
     }
 
-	IN_NIX='$(in_nix)'
+    IN_NIX='$(in_nix)'
 
     GIT_PS1_SHOWCOLORHINTS=1
     GIT_PS1_SHOWDIRTYSTATE=1
