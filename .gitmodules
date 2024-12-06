@@ -53,3 +53,9 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/haskell-tools.nvim"]
 	path = dotfiles/config/nvim/pack/syntax/opt/haskell-tools.nvim
 	url = https://github.com/MrcJkb/haskell-tools.nvim
+[submodule "dotfiles/config/nvim/pack/syntax/surround"]
+	path = dotfiles/config/nvim/pack/syntax/surround
+	url = https://tpope.io/vim/surround.git
+[submodule "dotfiles/config/nvim/pack/syntax/opt/vim-surround"]
+	path = dotfiles/config/nvim/pack/syntax/opt/vim-surround
+	url = https://github.com/tpope/vim-surround

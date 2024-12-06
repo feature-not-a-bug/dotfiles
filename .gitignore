@@ -3,3 +3,4 @@ dotfiles/config/postgres/**
 dotfiles/config/gh/**
 dotfiles/config/pulse/**
 dotfiles/config/yarn/**
+dotfiles/config/ghc/ghci_history

@@ -93,6 +93,7 @@ if has('nvim')
     packadd popup.nvim
     packadd rust-tools.nvim
     packadd rust.vim
+	packadd surround.vim
     packadd telescope.nvim
     packadd vim-vsnip
 
