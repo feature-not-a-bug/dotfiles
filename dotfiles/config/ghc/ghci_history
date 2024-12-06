@@ -1,0 +1,100 @@
+:q
+ :q
+:q
+:e
+:q
+:e
+:q
+:r
+:q
+twoLangs ! 2
+twoLangs ! 1
+twoLangs ! 0
+twoLangs 
+:e
+:q
+:i FromJSON
+:r
+:e
+:r
+A.encode myIP 
+Data.Csv.encode myIP
+:r
+Data.Csv.encode myIP
+:r
+Data.Csv.encode myIP
+Data.Csv.decode NoHeader myCSV :: Either String (Vector Ip)
+:r
+Data.Csv.decode NoHeader myCSV :: Either String (Vector Ip)
+:r
+Data.Csv.decode NoHeader myCSV :: Either String (Vector Ip)
+Data.Csv.encode [(Ip { ip = N.ipv4 71 74 119 52})]
+Data.Csv.encode [(Ip { ip = N.ipv4 71 74 119 52}]
+Data.Csv.encode myCSV 
+:r
+Data.Csv.decode NoHeader "74.119.47.56" :: Either String [Vector Ip]
+:r
+Data.Csv.decode NoHeader "74.119.47.56" :: Either String [Vector Ip]
+:q
+:wq
+:r
+Data.Csv.decode NoHeader "74.119.47.56" :: Either String [Ip]
+Data.Csv.decode NoHeader "74.119.47.56" :: Either String [Vector Ip]
+decode NoHeader "74.119.47.56" :: Either String [Vector Ip]
+decode NoHeader "74.119.47.56"
+decode NoHeader 
+Data.Csv.encode (Ip {ip = N.ipv4 71 74 119 56})
+Data.Csv.encode (Ip {ip = ipv4 71 74 119 56})
+fmap textToIp myJSON 
+fmap (Data.Csv.encode . textToIp) myJSON 
+fmap Data.Csv.encode . textToIp $ myJSON 
+fmap Data.Csv.encode . textToIp myJSON 
+fmap textToIp myJSON 
+fmap (Data.Csv.decode NoHeader . toBL) myCSV 
+fmap (Data.Csv.decode . toBL) myCSV 
+:t Data.Csv.decode 
+fmap textToIp myJSON 
+:r
+fmap textToIp myJSON 
+:r
+fmap (A.decode . toBL :: Maybe Ip) myJSON 
+A.decode (toBL myText) :: Maybe Ip
+toBL myText
+A.decode $ toBL myText
+A.decode . toBL $ myText
+A.decode $ myText
+A.decode . toBL $ myText
+:r
+A.decode . toJson $ myText
+A.decode . toJson myText
+fmap (A.decode . toJson) [myText, myText2]
+ fmap (A.decode . toJson) myJSON
+:t  fmap (A.decode . toJson) myJSON
+:t  fmap (A.encode . toJson) myJSON
+:t  fmap (A.encode toJson) myJSON
+:t  fmap toJson myJSON
+ fmap toJson myJSON
+ fmap A.decode . toJson myJSON
+:r
+ fmap A.decode . toJson myJSON
+A.decode (toJson myText) :: Maybe Ip
+A.decode . BL.fromStrict . T.encodeUtf8 $ myText
+A.decode $ myText
+:r
+A.decode $ head myJSON 
+A.decode . BL.fromStrict . T.encodeUtf8 $ baz
+BL.fromStrict . T.encodeUtf8 $ baz
+BL.fromStrict . T.encodeUtf8 baz
+T.encodeUtf8 baz
+baz = head myJSON 
+bar $ head myJSON 
+:t bar
+bar = A.decode . BL.fromStrict . T.encodeUtf8
+head myJSON 
+A.decode . BL.fromStrict . T.encodeUtf8 $ head myJSON 
+A.decode . BL.fromStrict   . T.encodeUtf8 $ head myJSON 
+A.decode . T.encodeUtf8 $ head myJSON 
+:t T.encodeUtf8
+:t head myJSON 
+A.decode $ head myJSON 
+T.unpack $ head myJSON 

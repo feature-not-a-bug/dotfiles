@@ -79,22 +79,22 @@ set tabstop=4
 set shiftwidth=4
 
 if has('nvim')
-    packadd rust.vim
     packadd nvim-lsp-installer
     packadd nvim-lspconfig
     lua require("nvim-lsp-installer").setup {}
-    lua require'lspconfig'.hls.setup{ settings = { haskell = { formattingProvider = "fourmolu" } } }
 
-    packadd nvim-cmp
-    packadd cmp-nvim-lsp
-    packadd cmp-vsnip
-    packadd cmp-path
     packadd cmp-buffer
-    packadd rust-tools.nvim
-    packadd vim-vsnip
-    packadd popup.nvim
+    packadd cmp-nvim-lsp
+    packadd cmp-path
+    packadd cmp-vsnip
+    packadd haskell-tools.nvim
+    packadd nvim-cmp
     packadd plenary.nvim
+    packadd popup.nvim
+    packadd rust-tools.nvim
+    packadd rust.vim
     packadd telescope.nvim
+    packadd vim-vsnip
 
     packadd cmp-helper
     set omnifunc=v:lua.vim.lsp.omnifunc
@@ -103,21 +103,21 @@ if has('nvim')
     let g:haskell_indent_disable=1
 
     if exists("g:neovide")
-        let g:neovide_refresh_rate=144
-        let g:neovide_cursor_vfx_mode = "wireframe"
-        let g:rainbow_active=1
         let g:neovide_confirm_quit=1
-        let g:neovide_window_floating_opacity=0.8
         let g:neovide_cursor_vfx_mode = "pixiedust"
+        let g:neovide_cursor_vfx_mode = "wireframe"
         let g:neovide_cursor_vfx_particle_density=14
+        let g:neovide_refresh_rate=144
         let g:neovide_remember_window_position=v:false
+        let g:neovide_window_floating_opacity=0.8
+        let g:rainbow_active=1
     endif
 endif
 
 " Custom digraphs
-digr ZZ 8484 " Blackboard Z
 digr NN 8469 " Blackboard N
 digr RR 8477 " Blackboard R
+digr ZZ 8484 " Blackboard Z
 digr -r 8866 " Right tack
 digr -l 8867 " Left tack
 digr T- 8868 " Down tack
