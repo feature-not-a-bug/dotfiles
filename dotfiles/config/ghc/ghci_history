@@ -1,4 +1,28 @@
 :q
+:e
+:q
+:Q
+:e
+:q
+:e
+:q
+curry snd 1 2
+ curry Left 1 2 
+:t curry
+ curry 1 2 (1,2)
+ uncurry (+) (1,3)
+:t uncurry
+ curry (+) (1,3)
+:t  curry (+)
+:q
+halve -1
+halve 0
+halve 3
+:q
+ :q
+:q
+ :q
+:q
  :q
 :q
 :e
@@ -74,27 +98,3 @@ fmap (A.decode . toJson) [myText, myText2]
 :t  fmap (A.encode toJson) myJSON
 :t  fmap toJson myJSON
  fmap toJson myJSON
- fmap A.decode . toJson myJSON
-:r
- fmap A.decode . toJson myJSON
-A.decode (toJson myText) :: Maybe Ip
-A.decode . BL.fromStrict . T.encodeUtf8 $ myText
-A.decode $ myText
-:r
-A.decode $ head myJSON 
-A.decode . BL.fromStrict . T.encodeUtf8 $ baz
-BL.fromStrict . T.encodeUtf8 $ baz
-BL.fromStrict . T.encodeUtf8 baz
-T.encodeUtf8 baz
-baz = head myJSON 
-bar $ head myJSON 
-:t bar
-bar = A.decode . BL.fromStrict . T.encodeUtf8
-head myJSON 
-A.decode . BL.fromStrict . T.encodeUtf8 $ head myJSON 
-A.decode . BL.fromStrict   . T.encodeUtf8 $ head myJSON 
-A.decode . T.encodeUtf8 $ head myJSON 
-:t T.encodeUtf8
-:t head myJSON 
-A.decode $ head myJSON 
-T.unpack $ head myJSON 

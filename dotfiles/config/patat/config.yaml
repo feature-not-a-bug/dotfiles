@@ -1,0 +1,27 @@
+### Eval
+eval:
+  figlet:
+    command: figlet 
+    replace: true
+    fragment: false
+    container: none
+
+### Look & Feel
+incrementalLists: true
+margins:
+  left: auto
+  right: auto
+  top: auto
+slidelevel: 2
+theme:
+  borders: [vividGreen]
+  codeBlock: [onRgb#1c1c1c]
+  codeBlock: [onDullBlack]
+  emph: [dullYellow]
+  header: [vividBlue]
+  strong: [vividMagenta, bold]
+  syntaxHighlighting:
+    keyword: [rgb#9CDC1E]
+    dataType: [rgb#569CD6]
+  title: [vividBlue]
+wrap: true
