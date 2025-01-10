@@ -56,3 +56,6 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/vim-surround"]
 	path = dotfiles/config/nvim/pack/syntax/opt/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "dotfiles/config/nvim/pack/syntax/opt/agda-vim"]
+	path = dotfiles/config/nvim/pack/syntax/opt/agda-vim
+	url = https://github.com/derekelkins/agda-vim
