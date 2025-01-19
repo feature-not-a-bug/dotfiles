@@ -139,7 +139,6 @@ add_to_path_if_exists /mnt/c/Program\ Files/PowerShell/7
 add_to_path_if_exists ${MSBUILDTOOLS}
 add_to_path_if_exists /opt/jdk-17.0.2+8/bin/
 add_to_path_if_exists /mnt/c/Program\ Files\ \(x86\)/Microsoft\ SDKs/Azure/CLI2/wbin
-add_to_path_if_exists /usr/local/go/bin
 
 set -o vi
 export EDITOR=nvim

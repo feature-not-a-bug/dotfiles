@@ -23,9 +23,6 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/cmp-buffer"]
 	path = dotfiles/config/nvim/pack/syntax/opt/cmp-buffer
 	url = https://www.github.com/hrsh7th/cmp-buffer.git
-[submodule "dotfiles/config/nvim/pack/syntax/opt/rust-tools.nvim"]
-	path = dotfiles/config/nvim/pack/syntax/opt/rust-tools.nvim
-	url = https://www.github.com/simrat39/rust-tools.nvim.git
 [submodule "dotfiles/config/nvim/pack/syntax/opt/vim-vsnip"]
 	path = dotfiles/config/nvim/pack/syntax/opt/vim-vsnip
 	url = https://www.github.com/hrsh7th/vim-vsnip.git
@@ -59,3 +56,6 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/agda-vim"]
 	path = dotfiles/config/nvim/pack/syntax/opt/agda-vim
 	url = https://github.com/derekelkins/agda-vim
+[submodule "dotfiles/config/nvim/pack/syntax/opt/rustaceanvim"]
+	path = dotfiles/config/nvim/pack/syntax/opt/rustaceanvim
+	url = https://github.com/mrcjkb/rustaceanvim

@@ -91,8 +91,9 @@ if has('nvim')
     packadd nvim-cmp
     packadd plenary.nvim
     packadd popup.nvim
-    packadd rust-tools.nvim
     packadd rust.vim
+	packadd rustaceanvim
+    packadd termdebug
     packadd telescope.nvim
     packadd vim-surround
     packadd vim-vsnip
