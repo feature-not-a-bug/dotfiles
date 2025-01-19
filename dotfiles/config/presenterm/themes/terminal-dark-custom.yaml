@@ -1,0 +1,4 @@
+extends: terminal-dark
+execution_output:
+  colors:
+    background: "2d2d2d"
