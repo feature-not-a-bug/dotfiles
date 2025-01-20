@@ -1,0 +1,18 @@
+extends: terminal-light
+default:
+  colors:
+    background: "e4e9ef"
+    foreground: "1c1c1c"
+
+execution_output:
+  colors:
+    background: "ffffff"
+    foreground: "1c1c1c"
+
+inline_code:
+  colors:
+    background: "ffffff"
+
+typst:
+  colors:
+    background: "f4f9ff"
