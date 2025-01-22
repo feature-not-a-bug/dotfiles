@@ -101,6 +101,7 @@ if has('nvim')
     packadd cmp-helper
     set omnifunc=v:lua.vim.lsp.omnifunc
     set signcolumn=yes
+	lua vim.keymap.set('n', '<leader>sf', vim.lsp.buf.format, opts)
 
     let g:haskell_indent_disable=1
 

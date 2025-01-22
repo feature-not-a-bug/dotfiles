@@ -44,9 +44,6 @@
 [submodule "dotfiles/config/nvim/pack/syntax/start/haskell-vim"]
 	path = dotfiles/config/nvim/pack/syntax/start/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim
-[submodule "dotfiles/config/nvim/pack/syntax/start/vim-fourmolu"]
-	path = dotfiles/config/nvim/pack/syntax/start/vim-fourmolu
-	url = https://github.com/feature-not-a-bug/vim-fourmolu
 [submodule "dotfiles/config/nvim/pack/syntax/opt/haskell-tools.nvim"]
 	path = dotfiles/config/nvim/pack/syntax/opt/haskell-tools.nvim
 	url = https://github.com/MrcJkb/haskell-tools.nvim

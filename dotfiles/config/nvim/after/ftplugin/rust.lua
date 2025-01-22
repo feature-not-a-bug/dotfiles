@@ -1,1 +1,2 @@
-let g:termdebugger="rust-gdb"
+vim.g.termdebugger = "rust-gdb"
+
