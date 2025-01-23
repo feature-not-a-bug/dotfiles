@@ -4,3 +4,8 @@ dotfiles/config/gh/**
 dotfiles/config/pulse/**
 dotfiles/config/yarn/**
 dotfiles/config/ghc/ghci_history
+dotfiles/config/cabal/bin/**
+dotfiles/config/cabal/logs/**
+dotfiles/config/cabal/packages/**
+dotfiles/config/cabal/script-builds/**
+dotfiles/config/cabal/store/**
