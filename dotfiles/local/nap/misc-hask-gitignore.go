@@ -1,0 +1,14 @@
+*.aux
+*.hi
+*.ld
+*.log
+*.o
+*.out
+*.pdf
+*.ptb
+*.swp
+*.tar.gz
+*.toc
+*~
+.setup-*-config
+/dist-newstyle

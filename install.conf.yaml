@@ -20,6 +20,7 @@
     # Directories
     ~/.config: dotfiles/config
     ~/.vim: dotfiles/config/nvim
+    ~/.local/share/nap: dotfiles/local/nap
 
 - create:
     - ~/tmp/vim
