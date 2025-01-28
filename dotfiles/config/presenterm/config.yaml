@@ -40,10 +40,10 @@ bindings:
   go_to_slide: ["<number>G"]
 
   # the key binding to execute a piece of shell code.
-  execute_code: ["<c-e>"]
+  execute_code: ["."]
 
   # the key binding to reload the presentation.
-  reload: ["<c-r>"]
+  reload: ["<F5>","<esc>"]
 
   # the key binding to toggle the slide index modal.
   toggle_slide_index: ["<c-p>"]
@@ -52,7 +52,7 @@ bindings:
   toggle_bindings: ["?"]
 
   # the key binding to close the currently open modal.
-  close_modal: ["<esc>"]
+  close_modal: ["`"]
 
   # the key binding to close the application.
   exit: ["<c-c>", "q"]
