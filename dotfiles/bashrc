@@ -142,6 +142,7 @@ add_to_path_if_exists /mnt/c/Program\ Files\ \(x86\)/Microsoft\ SDKs/Azure/CLI2/
 
 set -o vi
 export EDITOR=nvim
+export BROWSER=msedge
 
 if [ -f "$HOME/.config/postgres/pgenv.conf" ]
 then

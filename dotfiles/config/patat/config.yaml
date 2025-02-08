@@ -5,8 +5,12 @@ eval:
     replace: true
     fragment: false
     container: none
+  haskell:
+    command: runhaskell -w
 
 ### Look & Feel
+images:
+  backend: auto
 incrementalLists: true
 margins:
   left: auto
@@ -16,12 +20,12 @@ slidelevel: 2
 theme:
   borders: [vividGreen]
   codeBlock: [onRgb#1c1c1c]
-  codeBlock: [onDullBlack]
+  code: [onRgb#1c1c1c]
   emph: [dullYellow]
   header: [vividBlue]
   strong: [vividMagenta, bold]
-  syntaxHighlighting:
-    keyword: [rgb#9CDC1E]
-    dataType: [rgb#569CD6]
+#  syntaxHighlighting:
+#    keyword: [rgb#9CDC1E]
+#    dataType: [rgb#569CD6]
   title: [vividBlue]
 wrap: true

@@ -11,3 +11,10 @@ execution_output:
 inline_code:
   colors:
     background: "2d2d2d"
+
+footer:
+  style: template
+  left: "{author}"
+  right: "{current_slide} / {total_slides}"
+  colors:
+    foreground: green

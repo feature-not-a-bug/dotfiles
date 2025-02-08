@@ -16,3 +16,10 @@ inline_code:
 typst:
   colors:
     background: "f4f9ff"
+
+footer:
+  style: template
+  left: "{author}"
+  right: "{current_slide} / {total_slides}"
+  colors:
+    foreground: "FC4C02"

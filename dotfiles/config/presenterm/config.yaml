@@ -59,3 +59,4 @@ bindings:
 
   # the key binding to suspend the application.
   suspend: ["<c-z>"]
+
