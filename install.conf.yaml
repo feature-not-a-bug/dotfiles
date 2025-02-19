@@ -17,6 +17,7 @@
     ~/.haskeline: dotfiles/haskeline
     ~/.inputrc: dotfiles/inputrc
     ~/.vimrc: dotfiles/vimrc
+    ~/.config/nvim/after/ftplugin/lhaskell.lua: dotfiles/config/nvim/after/ftplugin/haskell.lua
 
     # Directories
     ~/.config: dotfiles/config
