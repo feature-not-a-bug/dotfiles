@@ -159,6 +159,11 @@ then
     . "$HOME/.bashrc.node"
 fi
 
+if [ -f "$HOME/.bashrc.wezterm" ]
+then
+    . "$HOME/.bashrc.wezterm"
+fi
+
 export LD_LIBRARY_PATH="$HOME/.local/lib"
 
 unset  CPATH

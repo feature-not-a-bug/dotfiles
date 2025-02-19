@@ -9,6 +9,7 @@
     ~/.bashrc.func: dotfiles/bashrc.func
     ~/.bashrc.git: dotfiles/bashrc.git
     ~/.bashrc.prompt: dotfiles/bashrc.prompt
+    ~/.bashrc.wezterm: dotfiles/bashrc.wezterm
     ~/.bashrc.wslfunc: dotfiles/bashrc.wslfunc
     ~/.bashrc: dotfiles/bashrc
     ~/.dircolors: dotfiles/dircolors
