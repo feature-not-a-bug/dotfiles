@@ -9,3 +9,4 @@ dotfiles/config/cabal/logs/**
 dotfiles/config/cabal/packages/**
 dotfiles/config/cabal/script-builds/**
 dotfiles/config/cabal/store/**
+dotfiles/config/nvim/after/ftplugin/lhaskell.lua
