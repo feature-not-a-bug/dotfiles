@@ -56,3 +56,6 @@
 [submodule "dotfiles/config/nvim/pack/syntax/opt/rustaceanvim"]
 	path = dotfiles/config/nvim/pack/syntax/opt/rustaceanvim
 	url = https://github.com/mrcjkb/rustaceanvim
+[submodule "dotfiles/config/nvim/pack/syntax/opt/nvim-treesitter"]
+	path = dotfiles/config/nvim/pack/syntax/opt/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter

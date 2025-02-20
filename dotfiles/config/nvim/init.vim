@@ -58,9 +58,9 @@ set number
 
 " Switches to relative numbering in normal mode and absolute in insert mode
 augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
-  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+    autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
 augroup END
 
 " Key mappings
@@ -89,10 +89,11 @@ if has('nvim')
     packadd cmp-vsnip
     packadd haskell-tools.nvim
     packadd nvim-cmp
+    packadd nvim-treesitter
     packadd plenary.nvim
     packadd popup.nvim
     packadd rust.vim
-	packadd rustaceanvim
+    packadd rustaceanvim
     packadd telescope.nvim
     packadd vim-surround
     packadd vim-vsnip
@@ -100,7 +101,10 @@ if has('nvim')
     packadd cmp-helper
     set omnifunc=v:lua.vim.lsp.omnifunc
     set signcolumn=yes
-	lua vim.keymap.set('n', '<leader>sf', vim.lsp.buf.format, opts)
+    lua vim.keymap.set('n', '<leader>sf', vim.lsp.buf.format, opts)
+
+    lua vim.g.haskell_tools = { hls = { settings = { haskell = { cabalFormattingProvider = 'cabal-fmt' } } } }
+
 
     let g:haskell_indent_disable=1
 
